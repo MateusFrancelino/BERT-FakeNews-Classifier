@@ -153,7 +153,7 @@ def hello():
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        # Get the text input from the request
+        
         data = request.get_json()
         input_text = data['text']
         
